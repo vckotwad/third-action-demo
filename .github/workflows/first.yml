@@ -13,7 +13,9 @@ jobs:
       - name: lint
         run: npm run lint
       - name: test
-        run: npm test  
+        run: npm run test  
+      - name: build
+        run: npm run build
       - name: deploy
         run: echo "i am deploying"
       
