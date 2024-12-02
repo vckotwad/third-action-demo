@@ -1,0 +1,17 @@
+name: lint,test,deploy
+on: push
+jobs:
+  lint_test-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        run: actions/checkout@v4
+      - name: setup nodejs
+        run: actions/setup-node@v4
+      - name: lint
+        run: npm lint
+      - name: test
+        run: npm test
+      - name: deploy
+        run: echo "i am deploying"
+      
