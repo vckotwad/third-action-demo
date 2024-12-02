@@ -10,8 +10,10 @@ jobs:
         uses: actions/setup-node@v3
       - name: install dependencies
         run: npm install
+      - name: lint
+        run: npm lint
       - name: test
-        run: npm test
+        run: npm test  
       - name: deploy
         run: echo "i am deploying"
       
