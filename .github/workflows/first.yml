@@ -11,7 +11,7 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: lint
-        run: npm lint
+        run: npm eslint --ext .jsx --fix src
       - name: test
         run: npm test
       - name: deploy
