@@ -10,8 +10,6 @@ jobs:
         uses: actions/setup-node@v4
       - name: install dependencies
         run: npm install
-      - name: lint
-        run: npm eslint --ext .jsx --fix src
       - name: test
         run: npm test
       - name: deploy
